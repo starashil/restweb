@@ -1,0 +1,251 @@
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: #e0c68b;
+    color: #3a3a3a;
+    color: #333;
+}
+
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url('images/slider5.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 80px 20px;
+    text-align: center;
+    color: white;
+    position: relative; 
+    z-index: 1;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 10;
+}
+.navbar .logo-container img {
+    max-width: 120px;
+    height: auto;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    margin-right: 20px;
+   
+
+}
+nav ul li a {
+    text-decoration: none;
+    color: #f8e8cf;
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+
+nav ul li a:hover {
+    color: #e0c68b;
+}
+
+.hero-section {
+    position: relative;
+    padding: 25px;
+    z-index: 1;
+    
+}
+
+.hero-section h1 {
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: #f8e8cf;
+    
+}
+
+.hero-section p {
+    font-size: 22px;
+    margin-bottom: 30px;
+    color: #f8e8cf;
+}
+
+.cta-button {
+    padding: 12px 30px;
+    background-color: #3a2c21;
+    color: #e5cfa0a1;
+    border: 2px solid #907355;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #B89C85;
+    color: #3a2c21;
+}
+
+/* Booking Section */
+.booking-section {
+    padding: 50px 20px;
+    background-color: #e4d9c2;
+    padding: 30px;
+    text-align: center;
+}
+
+.booking-section h2 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #3a2c21;
+}
+
+.booking-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.form-container {
+    flex: 1;
+    background-color:#B89C85;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    border:3px solid #7a4b36;
+
+}
+
+.form-container h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #3a2c21;
+}
+
+input[type="text"], input[type="email"], input[type="date"], input[type="time"], input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 3px solid #7a4b36;
+    margin-top: 6px;
+    font-size: 16px;
+    background-color:#B89C85; 
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #3a2c21
+    outline: none;
+}
+
+.book-btn {
+    width: 100%;
+    padding: 14px;
+    background-color: #3a2c21;
+    color: #efd9c2;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.book-btn:hover {
+    background-color: #c59f4a;
+}
+
+/* Explore Café Section */
+.explore-cafe {
+    flex: 2;
+    background-color:#e5cfa0a1;
+    padding: 20px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    border: 3px solid #7a4b36;;
+    background-origin: initial;
+}
+
+.explore-cafe h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #3a2c21;
+}
+.explore-cafe hr{
+    border-top : 3px solid #3a2c21;
+    width:60%;
+    
+}
+
+.gallery {
+    display: flex;
+    gap: 0px;
+    flex-wrap: wrap;
+}
+
+.gallery-item {
+    width: 100%;
+    max-width: 310px;
+    margin: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    border: 3px solid #7a4b36;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+/* Footer Styling */
+footer {
+    background-color: #3a2c21;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+

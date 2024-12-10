@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Table - Stellar Café</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="booktable.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo-container">
+                <img src="images/baklogo.png" alt="Stellar Café Logo" class="logo">
+            </div>
+            <nav>
+                    <ul>
+                        <li><a href="homepage7.html">Home</a></li>
+                        <li><a href="menulist.html">Menu</a></li>
+                        <li><a href="admin.html">Admin</a></li> 
+                        <li><a href="contacts.html">Contact</a></li>
+                    </ul>
+            </nav>
+        </div>
+        <div class="hero-section">
+            <h1>Reserve Your Table at Stellar Crust ! ☆</h1>
+            <p>Enjoy a warm ambiance and exquisite coffee.</p>
+            <a href="#book-table" class="cta-button">Book Now</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="book-table" class="booking-section">
+            <h2>Book Your Table ☆</h2>
+            <div class="booking-wrapper">
+               
+                <div class="form-container">
+                    <h3>Reserve Your Spot</h3>
+                    <form action="#">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Reservation Date</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Reservation Time</label>
+                            <input type="time" id="time" name="time" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="guests">Number of Guests</label>
+                            <input type="number" id="guests" name="guests" placeholder="Enter number of guests" required>
+                        </div>
+                        <button type="submit" class="book-btn">Book Table</button>
+                    </form>
+                </div>
+
+                
+                <div class="explore-cafe">
+                    <h3>Explore Our Café</h3>
+                    <center><hr></center>
+                    <div class="gallery">
+                        <div class="gallery-item">
+                            <img src="images/table2.jpg" alt="Café Interior">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/table1.jpg" alt="Café Seating">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/interiorr.png" alt="Café Coffee">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/slider1.jpeg" alt="cafe interior">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Stellar Crust | All rights reserved.</p>
+    </footer>
+</body>
+</html>
