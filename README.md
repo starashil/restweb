@@ -375,7 +375,7 @@ body {
     }
 }
 </style>
-
+```
 ## OUTPUT:
 
 Home page
